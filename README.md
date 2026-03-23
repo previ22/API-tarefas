@@ -1,32 +1,35 @@
-API Tarefas - Node.Js + Express
+# API Tarefa - Node.Js + Express
 API REST simples para gerenciar tarefas
 
-Pré-requisitos
-Node.js instalado
-Como rodar
-Instalar dependências
+## Pré-requisitos
+- Node.js instalado
+## Como rodar
+### Instalar dependências
+```bash
 npm i
-Iniciar servidor
+```
+### Iniciar servidor
+```bash
 node index.js
-Acessar
+```
+### Acessar
 Abra o nevegador em: http://localhost:3000
 
-Endpoints
-Alunos
-Método	Endpoint	Descrição
-GET	/alunos	Lista todos os alunos
-GET	/alunos/:id	Buscar um aluno específico
-POST	/alunos	Cria um aluno
-PUT	/aluno/:id	Atualiza um aluno
-DELETE	/aluno/:id	Remove um aluno
-Professores
-Método	Endpoint	Descrição
-GET	/professores	Lista todos os professores
-POST	/professores	Cria um professor
-PUT	/professores/:id	Atualiza um professor
-DELETE	/professores/:id	Remove um professor
-Tenologias
-Node.js
-Express
-Notas
-Os dados são armazenados em memória (reiniciar o servidor apaga tudo)
+## Endpoints
+### Tarefas
+## 🔗 Endpoints
+
+| Método | Endpoint           | Descrição                          |
+|--------|-------------------|------------------------------------|
+| GET    | `/tarefas`         | Lista todas as tarefas             |
+| GET    | `/tarefas/:id`     | Busca uma tarefa específica        |
+| GET    | `/tarefas?status=` | Busca tarefas por status           |
+| POST   | `/tarefas`         | Cria uma nova tarefa               |
+| PUT    | `/tarefa/:id`      | Atualiza uma tarefa existente      |
+| DELETE | `/tarefa/:id`      | Remove uma tarefa                  |
+
+## Tecnologias
+- Node.js
+- Express
+## Notas
+- Os dados são armazenados em memória (reiniciar o servidor apaga tudo)
